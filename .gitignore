@@ -1,0 +1,6 @@
+*.o
+./**/*.o
+autom4te.cache/
+Makefile
+./**/Makefile
+src/tux_aqfh
