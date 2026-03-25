@@ -9,14 +9,14 @@
 <center>by Steve and Oliver Baker</center>
 <br>
 <T1>Prerequisites.</T1>
-For this initial beta release, you'll need the following hardware:
+For this beta release, you'll need the following hardware:
 <ul>
-<li>Pentium 266MHz or better for great performance, 100MHz
+<li>i3 or better for great performance, Celeron/Pentium
 might be bearable.
 <li>3D graphics card with OpenGL/Mesa support.
-<li>32Mb RAM for reasonable performance.
+<li>64Mb RAM for reasonable performance.(32mb is untested)
 <li>A sound card that Linux can support.
-<li>A joystick (even a cheap one will do just fine - but
+<li>(not required) A joystick (even a cheap one will do just fine - but
 a 'game pad' with lots of buttons is best).
 </ul>
 The following software needs to be correctly installed:
@@ -35,8 +35,8 @@ The following software needs to be correctly installed:
 </ul>
 If you wish to develop more levels, or to improve the existing
 levels, you'll need a paint program (eg GIMP) and some kind of
-3D modeller. I currently use AC3D - which is a $40 shareware
-package.
+3D modeller. Just use Blender with additional .ac importer/exporter for the best, or (no longer popular) use AC3D - which is a $40 shareware
+package -- for the old way.
 <T1>Playing Tux.</T1>
 If you have a 3Dfx card, then
 as usual with 3D games under Linux, you need to set
@@ -67,7 +67,7 @@ for now, it's *very* convenient.
 
 </pre>
 The first time you play the game, you need to specify whether you
-wish to play as Tux (the boy Penguin) or Gown (the girl Penguin).
+wish to play as Tux (the boy Penguin) or Gown (the girl Penguin, but who's Penny?).
 Do this by passing '--gown' (-g) or '--tux' (-t) on the command
 line. The first time you play, it'll create a save file in your
 home directory called '.tux_aqfh_rc'.  If you want to reset the
@@ -88,7 +88,7 @@ the full path in the environment variable 'TUX_AQFH_RC'.
 <T1>The Objective.</T1>
 Right now, the only objective is to get to the end - but to do
 that, you have to collect a certain unspecified number of Golden
-Herring.  Each level contains a temple-like building with a green
+Herring. (currently still wrong)  Each level contains a temple-like building with a green
 swirling whirlpool in the middle. Jumping into the whirlpool takes
 you either on to the next level or back to a room called "The Antechamber"
 which gives you access to just those levels that you have enough Golden
@@ -122,7 +122,7 @@ Other collectables include:
      enemies, smashing into a snowman increases Tux's supply.
 </ul>
 <T1>Controls.</T1>
-Tux is moved using the joystick, the 'trigger button' (or the 'A'
+Tux is moved using the joystick/Keyboard/Mouse, the 'trigger button' (or the 'A'
 button on game pads) causes him to jump if walking or swimming on
 the surface, to try to fly if he is already in freefall for some
 reason, or to swim faster if he's underwater. The 'other' button
@@ -156,29 +156,29 @@ from the menu bar. The space-bar toggles the menu bar on and off.
 <T1>Cheat Mode</T1>
 It's necessary to cheat quite a bit during development - all the
 cheat functions are mapped to the keyboard - but are only enabled
-after a password has been typed. Currently the password is 'Tuxedo'
+after a password has been typed. Currently the password is 'Tuxedo' (why he tell this)
 (case sensitive) - but it will be changed or even removed when we
 make a formal non-development release.
 <p>
 Cheat mode commands tend to come and go as needed, but the most
 useful (and most likely to survive) are:
 <ul>
-<li> f : Freeze (or unfreeze) the motion of all bad-guys.
-<li> c : Toggle an on-screen text/debug overlay.
-<li> ? : Display Tux's current X/Y/Z position and the direction
+<li> ^ : Freeze (or unfreeze) the motion of all bad-guys.
+<li> ( : Toggle an on-screen text/debug overlay. (currently :( crash imminent )
+<li> ) : Display Tux's current X/Y/Z position and the direction
          he's facing (only visible when the overlay is on).
-<li> + : Go on to the next level without having to find the
+<li> = : Go on to the next level without having to find the
          temple.
-<li> - : Go back to the previous level.
-<li> r : Restock. Gives Tux a full supply of lives, energy,
+<li> _ : Go back to the previous level.
+<li> % : Restock. Gives Tux a full supply of lives, energy,
          health, herrings and snowballs.
 <li> k : Keypad mode - the game logic is suspended and
          Tux can be positioned directly using the numeric
          keypad. It's best to have the camera in 'follow Tux'
          mode when you do this. Hit 'k' again to return to
          normal play. 
-<li> t : Toggle texture map rendering on and off.
-<li> w : Toggle wireframe rendering on and off.
+<li> * : Toggle texture map rendering on and off.
+<li> & : Toggle wireframe rendering on and off.
 <li> x : Exit from cheat mode.
 </ul>
 <H2>What Works - What Doesn't?</H2>
@@ -194,13 +194,17 @@ of things that aren't done yet...
      objectives, etc. Some of the objects are 'interesting'
      but don't do anything yet.
 <li> Music: Well, I am shipping 'MOD' music files from
-     fairly dubious sources - it's always hard to discover
+     fairly dubious sources (found most from the mod archive) - it's always hard to discover
      whether music files out on public web sites are 'free'
      or not.  These files appear to be free - but if anyone
      knows any different, I'd like to hear about it.
      If you want to add your own music, create
      '.mod' files and edit the 'data/levelXXX.dat' file to
      make it play your song instead of the default.
+     TyagaGerson: i actually have an idea for a music for the 
+     lobby, my approach is make a minor version of the tux 
+     invicibility theme from other tux games, just like in 
+     a famous romhack.
 <li> There are no 'bad guys' apart from the Killer Whale
      (Freeware Willy) in level 1. Freeware Willie isn't fully
      debugged yet - sometimes he gets 'stuck' in shallow water.
@@ -216,6 +220,8 @@ of things that aren't done yet...
      eventually something in the texture system breaks and
      you see the odd texture map disappearing.
 <li> Snowballs can be thrown - but they don't do anything yet.
+
+<li> And others the the modder/contribs found.
 </ul>
 <H2>Contributions.</H2>
 I'm still having a lot of fun writing Tux - but I'm coming to the
@@ -243,4 +249,11 @@ a style of it's own - but the same basic theme.
 If the various game teams interchange code, models,
 music and ideas, I believe we could end up with
 a family of great games.
+
+well you may ask to me(TyagaGerson), why dont call it different??
+because the beta is HORRIBLY UNPLAYABLE on MODERN SYSTEMS. My attempt is
+to make it playable, scalable, and scale it until its no longer beta.
+
+talking about beta, there is no something urban legend-like e.g. AI Personalization,
+so no things to fear in this game!
 

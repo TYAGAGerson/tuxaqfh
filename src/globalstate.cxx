@@ -81,7 +81,7 @@ void GlobalState::keyboardInput ( int c )
     switch ( c )
     {
       case '_' : switchDatabase ( --level ) ; break ; 
-      case '+' : switchDatabase ( ++level ) ; break ;
+      case '=' : switchDatabase ( ++level ) ; break ;
  
       case ')' : tuxState->print () ;
                  break ;

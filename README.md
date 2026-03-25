@@ -6,7 +6,7 @@ Tuxedo T. Penguin: A Quest for Herring.
                            http://www.woodsoup.org/~sbaker
 
 (modified/unoriginal modded section begin)
-CONTROLS:
+CONTROLS (MORE AT ./docs/keystrokes.html):
 if you wanna use keyboard for tux movement, follow these steps:
 1. press [space]
 2. press View button
