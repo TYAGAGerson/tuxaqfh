@@ -164,7 +164,7 @@ configure: failed program was:
 | #define PACKAGE_BUGREPORT ""
 | #define PACKAGE_URL ""
 | #define PACKAGE "tux_aqfh"
-| #define VERSION "1.0.14"
+| #define VERSION "1.0.15.1"
 | /* end confdefs.h.  */
 | #include <ac_nonexistent.h>
 configure:4746: result: gcc -E
@@ -185,7 +185,7 @@ configure: failed program was:
 | #define PACKAGE_BUGREPORT ""
 | #define PACKAGE_URL ""
 | #define PACKAGE "tux_aqfh"
-| #define VERSION "1.0.14"
+| #define VERSION "1.0.15.1"
 | /* end confdefs.h.  */
 | #include <ac_nonexistent.h>
 configure:4874: checking for g++
@@ -263,7 +263,7 @@ configure: failed program was:
 | #define PACKAGE_BUGREPORT ""
 | #define PACKAGE_URL ""
 | #define PACKAGE "tux_aqfh"
-| #define VERSION "1.0.14"
+| #define VERSION "1.0.15.1"
 | /* end confdefs.h.  */
 | #include <ac_nonexistent.h>
 configure:5378: result: g++ -E
@@ -284,7 +284,7 @@ configure: failed program was:
 | #define PACKAGE_BUGREPORT ""
 | #define PACKAGE_URL ""
 | #define PACKAGE "tux_aqfh"
-| #define VERSION "1.0.14"
+| #define VERSION "1.0.15.1"
 | /* end confdefs.h.  */
 | #include <ac_nonexistent.h>
 configure:5486: checking for ranlib
@@ -342,7 +342,7 @@ configure: failed program was:
 | #define PACKAGE_BUGREPORT ""
 | #define PACKAGE_URL ""
 | #define PACKAGE "tux_aqfh"
-| #define VERSION "1.0.14"
+| #define VERSION "1.0.15.1"
 | #define HAVE_STDIO_H 1
 | #define HAVE_STDLIB_H 1
 | #define HAVE_STRING_H 1
@@ -424,8 +424,8 @@ configure:6518: $? = 0
 configure:6528: result: yes
 configure:6596: checking for ALopenport in -laudio
 configure:6619: gcc -o conftest -g -O2   conftest.c -laudio  -lplibsl -lplibssg -lplibpu -lplibfnt -lplibsg -lplibul -lglut -lGLU -lGL    -lSM -lICE -lpthread -lX11 -lXi -lXext -lXmu  -lm -lplibjs >&5
-/usr/bin/ld: /tmp/ccFSE7w0.o: in function `main':
-/home/tyaga/Downloads/tux_aqfh-1.0.14/conftest.c:32:(.text.startup+0xb): undefined reference to `ALopenport'
+/usr/bin/ld: /tmp/ccoNcQyq.o: in function `main':
+/home/tyaga/Downloads/tuxaqfh/conftest.c:32:(.text.startup+0xb): undefined reference to `ALopenport'
 collect2: error: ld returned 1 exit status
 configure:6619: $? = 1
 configure: failed program was:
@@ -437,7 +437,7 @@ configure: failed program was:
 | #define PACKAGE_BUGREPORT ""
 | #define PACKAGE_URL ""
 | #define PACKAGE "tux_aqfh"
-| #define VERSION "1.0.14"
+| #define VERSION "1.0.15.1"
 | #define HAVE_STDIO_H 1
 | #define HAVE_STDLIB_H 1
 | #define HAVE_STRING_H 1
@@ -499,7 +499,7 @@ configure: failed program was:
 | #define PACKAGE_BUGREPORT ""
 | #define PACKAGE_URL ""
 | #define PACKAGE "tux_aqfh"
-| #define VERSION "1.0.14"
+| #define VERSION "1.0.15.1"
 | #define HAVE_STDIO_H 1
 | #define HAVE_STDLIB_H 1
 | #define HAVE_STRING_H 1
@@ -698,7 +698,7 @@ CXXCPP='g++ -E'
 CXXDEPMODE='depmode=gcc3'
 CXXFLAGS='-g -O2 -O6 -Wall'
 CYGPATH_W='echo'
-DEFS='-DPACKAGE_NAME=\"\" -DPACKAGE_TARNAME=\"\" -DPACKAGE_VERSION=\"\" -DPACKAGE_STRING=\"\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"tux_aqfh\" -DVERSION=\"1.0.14\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_LIBGL=1 -DHAVE_LIBGLU=1 -DHAVE_LIBGLUT=1 -DHAVE_GL_GL_H=1 -DHAVE_GL_GLU_H=1 -DHAVE_GL_GLUT_H=1 -DLINUX_JOYSTICK_IS_PRESENT=1 -DTUX_AQFH_DATADIR=\"\$$\{prefix\}/share/games/tux_aqfh\"'
+DEFS='-DPACKAGE_NAME=\"\" -DPACKAGE_TARNAME=\"\" -DPACKAGE_VERSION=\"\" -DPACKAGE_STRING=\"\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"tux_aqfh\" -DVERSION=\"1.0.15.1\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_LIBGL=1 -DHAVE_LIBGLU=1 -DHAVE_LIBGLUT=1 -DHAVE_GL_GL_H=1 -DHAVE_GL_GLU_H=1 -DHAVE_GL_GLUT_H=1 -DLINUX_JOYSTICK_IS_PRESENT=1 -DTUX_AQFH_DATADIR=\"\$$\{prefix\}/share/games/tux_aqfh\"'
 DEPDIR='.deps'
 ECHO_C=''
 ECHO_N='-n'
@@ -736,7 +736,7 @@ RANLIB='ranlib'
 SET_MAKE=''
 SHELL='/bin/bash'
 STRIP=''
-VERSION='1.0.14'
+VERSION='1.0.15.1'
 XMKMF=''
 X_CFLAGS=''
 X_EXTRA_LIBS=''
@@ -768,7 +768,7 @@ host_alias=''
 htmldir='${docdir}'
 includedir='${prefix}/include'
 infodir='${datarootdir}/info'
-install_sh='${SHELL} /home/tyaga/Downloads/tux_aqfh-1.0.14/install-sh'
+install_sh='${SHELL} /home/tyaga/Downloads/tuxaqfh/install-sh'
 libdir='${exec_prefix}/lib'
 libexecdir='${exec_prefix}/libexec'
 localedir='${datarootdir}/locale'
@@ -798,7 +798,7 @@ target_alias=''
 #define PACKAGE_BUGREPORT ""
 #define PACKAGE_URL ""
 #define PACKAGE "tux_aqfh"
-#define VERSION "1.0.14"
+#define VERSION "1.0.15.1"
 #define HAVE_STDIO_H 1
 #define HAVE_STDLIB_H 1
 #define HAVE_STRING_H 1

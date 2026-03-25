@@ -5,6 +5,51 @@ Tuxedo T. Penguin: A Quest for Herring.
                            <sjbaker1@airmail.net>
                            http://www.woodsoup.org/~sbaker
 
+(modified/unoriginal modded section begin)
+CONTROLS:
+if you wanna use keyboard for tux movement, follow these steps:
+1. press [space]
+2. press View button
+3. choose No Mousetrap button
+4. press F1 for keymaps
+
+
+for mousetrappers(default):
+press right mouse button to stop tux
+
+for cheaters:
+self-explanatory
+
+FAQ: 
+Q:whats the difference between the original and this?
+A:the most answer is this mod is MOSTLY PLAYABLE and NO TOO MUCH SPEEDUPS (press z in-game for fastforward) + no need to modify Makefile thats just created by ./configure
+
+Q:how to swim?
+A:kindly hold the r or j button until tux is fully submerged. Then "move" forward 
+
+Q: i see a very long warning text
+A: ok, this is kinda technical but the point is that the engine to use OpenGL (GLUT) currently doesnt fully support a window manager called wayland. You're not doomed yet, you can always look the internet to switch it to Xorg/X11 or just pray and hope this game will switch to SDL/GLFW.
+
+Q: its very laggy
+A: it is, to accommodate the game speed.
+
+Q: my tux always moving diagonally
+A: well, the current solution is:
+1. press [space]
+2. press View button
+3. choose No Mousetrap button
+
+Q:keyboard mapping are weird
+A:yes, i know that, at the future i'll remap those to something similiar like Project64
+
+Q:what's the license for assets?
+A:basically GPLv2, EXCEPT THE MUSIC (or yes?) BECAUSE IT WAS PROBABLY DOWNLOADED FROM THE MOD ARCHIVE
+
+Q:does the gameplay follows the story?
+A:it will, but not now.
+
+(modified/unoriginal modded section end)
+
 INSTALLATION:
 
 Installation instructions are pretty basic,
@@ -16,16 +61,25 @@ installed:
    OpenGL (or Mesa) + GLIDE (if yuo have a 3Dfx card)
    GLUT (the GL Utility Toolkit)
    PLIB (which can be obtained from:
-     http://www.woodsoup.org/projs/plib
+     http://www.woodsoup.org/projs/plib)
 
 Once that is done, it should be a simple matter of changing
 to the directory where all this stuff is unpacked and type:
 
+(modified/unoriginal modded section begin)
+
  ```
  ./configure
  make
- make install
  ```
+
+Do not... do not do sudo make install.. (or yes if you wanna make it an app thats still called tux_aqfh)
+
+run the game:
+```
+./src/tux_aqfh
+```
+(modified/unoriginal modded section end)
 
 However, you might want to check the full documentation -
 especially if you need to install Mesa/GLIDE/GLUT before
@@ -64,14 +118,13 @@ wavs    -- Sound files - mostly sound effects.
 
 mods    -- MOD format music files.
 
-(modified/unoriginal section below)
-FAQ: 
-Q:how to swim?
-A:kindly hold the r or j button until tux is fully submerged. Then "move" forward 
+(modified/unoriginal modded section below)
+
+
 
 
 TODO:
-- switch to SDL2 (or GLFW)
+- switch to SDL (or GLFW)
 - test and fix Windows port
 - custom keymap
 - clear save file location

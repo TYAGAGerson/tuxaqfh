@@ -170,7 +170,7 @@ static puCallback sound_submenu_cb [] = {  music_off_cb,        sfx_off_cb,     
 static char      *view_submenu    [] = { "Mousetrap Mode",   "No Mousetrap", "Windowed"  , "Fullscreen" , NULL } ;
 static puCallback view_submenu_cb [] = { mousetrap_on_cb , mousetrap_off_cb, window_on_cb, window_off_cb, NULL } ;
 
-static char      *ctrl_submenu    [] = { "Play using Joystick", "Play using Mouse & Keyboard", "Car Mode" , "sm64-like Mode (default)", NULL } ;
+static char      *ctrl_submenu    [] = { "Play using Joystick (untested)", "Play using Mouse & Keyboard", "car/doom-like Mode" , "sm64-like Mode (default)", NULL } ;
 static puCallback ctrl_submenu_cb [] = { joystick_on_cb       , joystick_off_cb   , set_rcmode, unset_rcmode , NULL } ;
 
 static char      *help_submenu    [] = { "Versions...", "Credits...", "About...",  "Help", NULL } ;

@@ -3317,7 +3317,7 @@ fi
 # Define the identity of the package.
 
  PACKAGE=tux_aqfh
- VERSION=1.0.14
+ VERSION=1.0.15.1
 
 
 printf "%s\n" "#define PACKAGE \"$PACKAGE\"" >>confdefs.h

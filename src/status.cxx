@@ -194,8 +194,8 @@ void drawHelpText ()
     drawDropShadowText ( "Keyboard & Mouse Buttons:", 18, 70, 250 ) ;
     drawDropShadowText ( " left click - Jump, Swim      right click - Dive, Throw", 12, 90, 230 ) ;
     drawDropShadowText ( "          R - Roll     [/]/;/single quote - Camera", 12, 90, 210 ) ;
-    drawDropShadowText ( "          P - Pause                    F1 - Help", 12, 90, 190 ) ;
-    drawDropShadowText ( "         F2 - History of Tux", 12, 90, 170 ) ;
+    drawDropShadowText ( "          P - Pause                     Z - Fast Forward", 12, 90, 190 ) ;
+    drawDropShadowText ( "         F1 - Help                     F2 - History of Tux", 12, 90, 170 ) ;
   }
 }
 
